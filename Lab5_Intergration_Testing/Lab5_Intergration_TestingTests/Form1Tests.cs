@@ -11,6 +11,7 @@ namespace Lab5_Intergration_Testing.Tests
     [TestClass()]
     public class Form1Tests
     {
+<<<<<<< HEAD
         /*
          Test Identifier: 1.1
          * Test Description: Testing age by 2000
@@ -60,6 +61,28 @@ namespace Lab5_Intergration_Testing.Tests
             int yearOfBirth = 1980;
             int result = Lab5_Intergration_Testing.Form1.CheckAge(yearOfBirth);
             Assert.AreEqual(35, result);
+=======
+        //Set up fixture
+        Form1 fl = new Form1();
+
+        [TestMethod()]
+        public void check_age_USTest_FOR_0()
+        {
+            Assert.AreEqual(false, fl.check_age_US(0));
+        }
+
+        [TestMethod()]
+        public void check_age_USTest_FOR_21()
+        {
+
+            Assert.AreEqual(false, fl.check_age_US(21));
+        }
+
+        [TestMethod()]
+        public void check_age_USTest_FOR_22()
+        {
+            Assert.AreEqual(true, fl.check_age_US(22));
+>>>>>>> origin/master
         }
     }
 }

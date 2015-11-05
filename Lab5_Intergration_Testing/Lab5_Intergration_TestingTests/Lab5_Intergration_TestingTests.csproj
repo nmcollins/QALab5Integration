@@ -3,7 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+<<<<<<< HEAD
     <ProjectGuid>{654FF6F6-F06F-49D6-ACDA-FE2254233BBF}</ProjectGuid>
+=======
+    <ProjectGuid>{89ED30C5-3798-4412-AE4D-C6A9CE07E675}</ProjectGuid>
+>>>>>>> origin/master
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lab5_Intergration_TestingTests</RootNamespace>
