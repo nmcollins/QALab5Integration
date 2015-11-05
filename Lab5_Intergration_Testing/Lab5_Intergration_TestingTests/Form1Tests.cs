@@ -82,7 +82,25 @@ namespace Lab5_Intergration_Testing.Tests
         public void check_age_USTest_FOR_22()
         {
             Assert.AreEqual(true, fl.check_age_US(22));
+        }
 
+        [TestMethod()]
+        public void check_age_Canada_FOR_0()
+        {
+            Assert.AreEqual(false, fl.check_age_Canada(0));
+        }
+
+        [TestMethod()]
+        public void check_age_Canada_FOR_18()
+        {
+
+            Assert.AreEqual(false, fl.check_age_Canada(18));
+        }
+
+        [TestMethod()]
+        public void check_age_Canada_FOR_19()
+        {
+            Assert.AreEqual(true, fl.check_age_Canada(19));
         }
     }
 }

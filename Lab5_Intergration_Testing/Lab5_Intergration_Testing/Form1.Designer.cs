@@ -71,6 +71,7 @@
             this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Result";
+
             // 
             // button2
             // 
@@ -81,6 +82,7 @@
             this.button2.Text = "Check SKorea";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+
             // 
             // button3
             // 
