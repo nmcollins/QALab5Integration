@@ -62,13 +62,6 @@ namespace Lab5_Intergration_Testing
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            label1.Text = "Input your year of birth";
-            button1.Text = "Check your age";
-            label2.Text = "Your age is";
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             //Check age of South Korea
