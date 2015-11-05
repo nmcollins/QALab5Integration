@@ -16,5 +16,10 @@ namespace Lab5_Intergration_Testing
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
