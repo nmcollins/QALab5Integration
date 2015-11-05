@@ -99,7 +99,45 @@ namespace Lab5_Intergration_Testing
         private void button3_Click(object sender, EventArgs e)
         {
             //check Germany
+            int age = 0; ;
+            try
+            {
+                age = int.Parse(textBox1.Text);
+            }
+            catch (FormatException)
+            {
+                label2.Text = "Please enter a valid age";
+            }
+
+            finally
+            {
+                if (age >= 16)
+                {
+                    label2.Text = "You can drink alchohol in Germany";
+                }
+
+                else
+                {
+                    label2.Text = "You CAN'T drink alchohol in Germany";
+                }
+
+            }
         }
+
+        public bool TestAgeInGermany(int age)
+        {
+            if (age >= 16)
+            {
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
+
+        }
+
 
         private void button4_Click(object sender, EventArgs e)
         {

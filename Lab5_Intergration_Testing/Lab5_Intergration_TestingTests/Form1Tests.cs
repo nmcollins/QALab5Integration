@@ -102,5 +102,81 @@ namespace Lab5_Intergration_Testing.Tests
         {
             Assert.AreEqual(true, fl.check_age_Canada(19));
         }
+
+        /*
+         Test Identifier: 1.0
+         * Test Description: Testing Bigger than 16
+         * Input Data: 17
+         * Actions: check the age
+         * Expected Output: True
+         * OBserved Output: will be reported
+         * Failed Action: Alert the user that their input failed to check 17
+         */
+        [TestMethod()]
+        public void Check_Age_In_Germany_Age_Bigger_Than_16()
+        {
+            //Arrange
+            int age = 17;
+            var Form1 = new Form1();
+            bool result = false;
+            bool expected = true;
+
+            //Act 
+
+            result = Form1.TestAgeInGermany(age);
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        /*
+         Test Identifier: 1.1
+         * Test Description: Testing less than 16
+         * Input Data: 15
+         * Actions: check the age
+         * Expected Output: Flase
+         * OBserved Output: will be reported
+         * Failed Action: Alert the user that their input failed to check 15
+         */
+        [TestMethod()]
+        public void Check_Age_In_Germany_Less_Than_16()
+        {
+            //Arrange
+            int age = 15;
+            var Form1 = new Form1();
+            bool result = false;
+            bool expected = false;
+
+            //Act 
+            result = Form1.TestAgeInGermany(age);
+
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        /*
+         Test Identifier: 1.2
+         * Test Description: Testing exactly 16
+         * Input Data: 16
+         * Actions: check the age
+         * Expected Output: True
+         * OBserved Output: will be reported
+         * Failed Action: Alert the user that their input failed to check 16
+         */
+        [TestMethod()]
+        public void Check_Age_In_Germany_Exactly_16()
+        {
+            //Arrange
+            int age = 16;
+            var Form1 = new Form1();
+            bool result = false;
+            bool expected = true;
+
+            //Act 
+            result = Form1.TestAgeInGermany(age);
+
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+
     }
 }
